@@ -1,6 +1,6 @@
 import { buildClient } from '@datocms/cma-client-node';
 
-const TOKEN = "ee087ada8d92fbbfe2d1a581f5311f"
+const TOKEN = ""
 
 export default async function news(req, res) {
   const client = buildClient({ apiToken: TOKEN });
