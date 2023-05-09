@@ -12,5 +12,12 @@ export default async function news(req, res) {
     },
   });
 
+  res.setHeader("Access-Control-Allow-Origin", "https://jornalestudantiltiradentes.vercel.app");
+
+  // res.header(
+  //   "Access-Control-Allow-Headers",
+  //   "Origin, X-Requested-With, Content-Type, Accept"
+  // );
+
   res.json(records);
 }
