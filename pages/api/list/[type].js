@@ -13,10 +13,7 @@ export default async function news(req, res) {
   });
 
   res.setHeader('Access-Control-Allow-Origin', '*');
-  // res.header(
-  //   "Access-Control-Allow-Headers",
-  //   "Origin, X-Requested-With, Content-Type, Accept"
-  // );
+  res.setHeader('Cache-Control', 's-maxage=15, stale-while-revalidate')
 
   res.json(records);
 }
